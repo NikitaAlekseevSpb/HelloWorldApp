@@ -16,35 +16,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQJ-An-OFo">
-                                <rect key="frame" x="82" y="760" width="250" height="52"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="l0C-Cg-PAW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <state key="normal" title="Show Text">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="showButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="GZC-F8-Dpw"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yx4-FB-sM5">
-                                <rect key="frame" x="65" y="164" width="285" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yx4-FB-sM5">
+                                <rect key="frame" x="65" y="169" width="285" height="50.5"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="43"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iqN-lg-UAl">
+                                <rect key="frame" x="82" y="674" width="250" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQJ-An-OFo">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="52"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <state key="normal" title="Show Text">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="GZC-F8-Dpw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEo-Mf-FRH">
+                                        <rect key="frame" x="0.0" y="68" width="250" height="52"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <state key="normal" title="Do something">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="guD-TA-CyY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="aWY-qw-nHe"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.33652365760013409" green="0.73279840714124056" blue="0.7467842487373737" alpha="0.99045426324503316" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="IQJ-An-OFo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dkc-Jq-KrX"/>
+                            <constraint firstItem="iqN-lg-UAl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6bg-qz-Duo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yx4-FB-sM5" secondAttribute="trailing" constant="64" id="I3o-FF-0if"/>
                             <constraint firstItem="yx4-FB-sM5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="VFP-lM-Trr"/>
                             <constraint firstItem="yx4-FB-sM5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="WXP-L9-8XV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IQJ-An-OFo" secondAttribute="bottom" constant="50" id="xRS-RO-R0j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iqN-lg-UAl" secondAttribute="bottom" constant="68" id="haT-2I-iRI"/>
                         </constraints>
                     </view>
                     <connections>
